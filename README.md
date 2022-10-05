@@ -1,2 +1,6 @@
-# nvim-config
-My personal neovim configuration
+
+```shell
+git clone https://github.com/gadokrisztian/nvim-config.git ~/.config/nvim
+```
+
+
