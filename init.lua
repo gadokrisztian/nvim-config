@@ -62,6 +62,9 @@ require('packer').startup(function (use)
   -- filter list of items
   use 'nvim-telescope/telescope.nvim'
 
+  -- fzf native plugin for telescope
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+
   if install_plugins then
     require('packer').sync()
   end
