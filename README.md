@@ -1,6 +1,20 @@
 
 ## Requirements
 
+### Telescope
+
+#### `fd` plugin
+<https://github.com/sharkdp/fd>
+
+Ubuntu: ```sudo apt install fd-find```
+Windows: <https://github.com/sharkdp/fd/releases>
+
+#### `ripgrep` plugin
+<https://github.com/BurntSushi/ripgrep>
+
+Ubuntu: ```udo apt-get install ripgrep```
+Windows: <https://github.com/BurntSushi/ripgrep/releases>
+
 ### telescope-fzf-native.nvim
 <https://github.com/nvim-telescope/telescope-fzf-native.nvim>
 
