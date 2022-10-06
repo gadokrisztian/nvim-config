@@ -7,12 +7,14 @@
 <https://github.com/sharkdp/fd>
 
 Ubuntu: ```sudo apt install fd-find```
+
 Windows: <https://github.com/sharkdp/fd/releases>
 
 #### `ripgrep` plugin
 <https://github.com/BurntSushi/ripgrep>
 
 Ubuntu: ```udo apt-get install ripgrep```
+
 Windows: <https://github.com/BurntSushi/ripgrep/releases>
 
 ### telescope-fzf-native.nvim
@@ -27,6 +29,7 @@ Linux:
 ```shell
 git clone https://github.com/gadokrisztian/nvim-config.git ~/.config/nvim
 ```
+
 Windows:
 ```shell
 git clone https://github.com/gadokrisztian/nvim-config.git %LOCALAPPDATA%/nvim
