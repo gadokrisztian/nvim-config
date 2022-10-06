@@ -99,7 +99,7 @@ local plugins = packer.startup({function (use)
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
+		--run = ":TSUpdate",
 		config = [[require("config.nvim-treesitter")]]
 	}
 

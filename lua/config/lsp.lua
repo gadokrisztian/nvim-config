@@ -116,6 +116,7 @@ require("lspconfig").clangd.setup {
 }
 
 require("lspconfig").jdtls.setup {
+	single_file_support = true,
 	--cmd = { "jdtls" },
 	on_attach = common_config.common_on_attach,
 	capabilities = common_config.capabilities,
@@ -144,6 +145,7 @@ require("lspconfig").pyright.setup {
 }
 
 require("lspconfig").sumneko_lua.setup {
+	single_file_support = true,
 	--cmd = { "/usr/bin/lua-language-server" },
 	on_attach = common_config.common_on_attach,
 	capabilities = common_config.capabilities,
