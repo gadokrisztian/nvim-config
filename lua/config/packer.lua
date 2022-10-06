@@ -103,6 +103,13 @@ local plugins = packer.startup({function (use)
 		config = [[require("config.nvim-treesitter")]]
 	}
 
+	-- Ergonomic terminal
+	use {
+		"akinsho/toggleterm.nvim",
+		tag = '*',
+		config = [[require("config.toggleterm")]]
+	}
+
     
 end,
 config={
