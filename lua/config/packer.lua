@@ -15,9 +15,6 @@ local plugins = packer.startup({function (use)
         'nvim-lualine/lualine.nvim',
         config = [[require("config.lualine")]]
     }
-
-    -- Devicons
-    use 'kyazdani42/nvim-web-devicons'
     
     -- Theme inspired by Atom
     use 'joshdick/onedark.vim'
@@ -67,6 +64,14 @@ local plugins = packer.startup({function (use)
 			{ 'v', "<leader>c" }
 		},
 		config = [[require("config.nvim-comment")]]
+	}
+
+    -- Nvim tree
+	use {
+		"kyazdani42/nvim-tree.lua",
+		cmd = "NvimTreeToggle",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+		config = [[require("config.nvim-tree")]]
 	}
 
     
