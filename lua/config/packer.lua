@@ -74,6 +74,35 @@ local plugins = packer.startup({function (use)
 		config = [[require("config.nvim-tree")]]
 	}
 
+	-- LSP
+	use {
+		"neovim/nvim-lspconfig",
+		config = [[require("config.lsp")]]
+	}
+
+	-- Completion
+	use {
+		"hrsh7th/nvim-cmp",
+		requires = {
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-nvim-lsp-signature-help",
+			"hrsh7th/cmp-nvim-lua",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
+			"L3MON4D3/LuaSnip",
+			"saadparwaiz1/cmp_luasnip"
+		},
+		config = [[require("config.nvim-cmp")]]
+	}
+
+	-- Treesitter
+	use {
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+		config = [[require("config.nvim-treesitter")]]
+	}
+
     
 end,
 config={
