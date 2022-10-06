@@ -52,6 +52,23 @@ local plugins = packer.startup({function (use)
 		config = [[require("config.which-key")]]
 	}
 
+    	-- Git Stuff
+	use {
+		"lewis6991/gitsigns.nvim",
+		requires = { "nvim-lua/plenary.nvim", opt = true },
+		config = [[require("config.gitsigns")]]
+	}
+
+    -- Comments
+	use {
+		"terrortylor/nvim-comment",
+		keys = {
+			{ 'n', "<leader>c" },
+			{ 'v', "<leader>c" }
+		},
+		config = [[require("config.nvim-comment")]]
+	}
+
     
 end,
 config={
