@@ -55,5 +55,11 @@ local plugins = packer.startup({function (use)
     
 end,
 config={
-    auto_clean=true
+    auto_clean=true,
+    compile_on_sync = true,
+	ensure_dependencies = true,
+	display = { open_cmd = "vnew \\[packer\\]" },
+	profile = {	enable = false }
 }})
+
+return plugins
