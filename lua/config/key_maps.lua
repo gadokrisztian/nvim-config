@@ -1,0 +1,5 @@
+vim.keymap.set('n', '<leader>w', '<cmd>write<cr>', {desc='Saves the file in normal mode.'})
+vim.keymap.set({'n', 'x'}, 'cp', '"+y', {desc='Copy to clipboard.'})
+vim.keymap.set({'n', 'x'}, 'cv', '"+p', {desc='Paste from clipboard.'})
+vim.keymap.set({'n', 'x'}, 'x', '"_x', {desc='Delete without changing the registers.'})
+vim.keymap.set('n', '<leader>a', ':keepjumps normal! ggVG<cr>', {desc='Select all text in current buffer.'})
