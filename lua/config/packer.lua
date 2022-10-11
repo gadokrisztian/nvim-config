@@ -7,6 +7,14 @@ local plugins = packer.startup({function (use)
 		config = [[require("config.packer")]]
 	}
 
+    use "github/copilot.vim"
+
+    -- LSP installer
+    use {
+        "williamboman/mason.nvim",
+		config = [[require("config.mason_setup")]]
+    }
+
     -- Speed Up
 	use { "lewis6991/impatient.nvim" }
 
@@ -18,6 +26,9 @@ local plugins = packer.startup({function (use)
     
     -- Theme inspired by Atom
     use 'joshdick/onedark.vim'
+
+    -- Autoplace brackets
+    use 'windwp/nvim-autopairs'
 
     -- Telescope
 	use {

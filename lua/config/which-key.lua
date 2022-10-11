@@ -50,37 +50,35 @@ wk.setup {
 	},
 }
 
-local nmaps = {
-	["<c-\\>"] = {
-		name = "Terminal",
-		["<c-\\>"] = "Toggle Terminal"
-	},
-	["<c-a>"] = { "ggVG", "Select All" },
-	["<c-p>"] = { "<cmd>Telescope find_files<CR>", "Find files" },
-	["<Tab>"] = { "<cmd>BufferLineCycleNext<CR>", "Next Buffer" },
-	["<S-Tab>"] = { "<cmd>BufferLineCyclePrev<CR>", "Prev Buffer" },
-	["<leader>"] = {
-		b = { "<cmd>NvimTreeToggle<CR>", "File Tree" },
-		c = { name = "Comment", c = { "Comment Line" } },
-		f = {
-			name = "Find",
-			f = { "<cmd>Telescope find_files<CR>", "Files" },
-			g = { "<cmd>Telescope live_grep<CR>", "Grep" },
-			o = { "<cmd>Telescope oldfiles<CR>", "Old Files" }
-		},
-		x = { "<cmd>bdelete<CR>", "Close Buffer" },
-		["<Tab>"] = { "<cmd>Telescope buffers<CR>", "Show Buffers" },
-		['.'] = { "<cmd>BufferLineMoveNext<CR>", "Buf Move Right" },
-		[','] = { "<cmd>BufferLineMovePrev<CR>", "Buf Move Left" }
-	}
-}
+-- local nmaps = {
+-- 	["<c-\\>"] = {
+-- 		name = "Terminal",
+-- 		["<c-\\>"] = "Toggle Terminal"
+-- 	},
+-- 	["<c-a>"] = { "ggVG", "Select All" },
+-- 	["<c-p>"] = { "<cmd>Telescope find_files<CR>", "Find files" },
+-- 	["<Tab>"] = { "<cmd>BufferLineCycleNext<CR>", "Next Buffer" },
+-- 	["<S-Tab>"] = { "<cmd>BufferLineCyclePrev<CR>", "Prev Buffer" },
+-- 	["<leader>"] = {
+-- 		b = { "<cmd>NvimTreeToggle<CR>", "File Tree" },
+-- 		c = { name = "Comment", c = { "Comment Line" } },
+-- 		f = {
+-- 			name = "Find",
+-- 			f = { "<cmd>Telescope find_files<CR>", "Files" },
+-- 			g = { "<cmd>Telescope live_grep<CR>", "Grep" },
+-- 			o = { "<cmd>Telescope oldfiles<CR>", "Old Files" }
+-- 		},
+-- 		x = { "<cmd>bdelete<CR>", "Close Buffer" },
+-- 		["<Tab>"] = { "<cmd> buffers<CR>", "Show Buffers" },
+-- 	}
+-- }
 
-local vmaps = {
-	["<c-c>"] = { "\"+y", "Copy to Clipboard" },
-	["<leader>"] = {
-		c = {"Comment Selection"},
-	}
-}
+-- local vmaps = {
+-- 	["<c-c>"] = { "\"+y", "Copy to Clipboard" },
+-- 	["<leader>"] = {
+-- 		c = {"Comment Selection"},
+-- 	}
+-- }
 
-wk.register(nmaps, {mode = 'n', noremap = true, silent = true})
-wk.register(vmaps, {mode = 'v', noremap = true, silent = true})
+-- wk.register(nmaps, {mode = 'n', noremap = true, silent = true})
+-- wk.register(vmaps, {mode = 'v,n', noremap = true, silent = true})

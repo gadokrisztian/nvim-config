@@ -1,6 +1,3 @@
--- Set leader
-vim.g.mapleader = ' '
-
 -- Colorscheme
 vim.opt.termguicolors = true
 vim.opt.background = 'dark'
@@ -18,9 +15,9 @@ vim.o.foldmethod="expr"                         -- folding method is expression 
 vim.o.foldexpr="nvim_treesitter#foldexpr()"     -- folding is based on treesitter
 vim.o.foldnestmax=3                             -- maximum number of nested folds
 vim.o.autoindent=true                           -- indent according to previous line
-vim.o.tabstop=2                                 -- number of spaces a tab counts for
-vim.o.shiftwidth=2                              -- number of spaces to use for autoindent
-vim.o.softtabstop=2                             -- number of spaces to use for autoindent
+vim.o.tabstop=4                                 -- number of spaces a tab counts for
+vim.o.shiftwidth=4                              -- number of spaces to use for autoindent
+vim.o.softtabstop=4                             -- number of spaces to use for autoindent
 vim.o.expandtab=true                            -- use spaces instead of tabs
 vim.o.smarttab=true                             -- smart tabbing
 vim.o.shiftround=true                           -- round indent to multiple of shiftwidth
@@ -57,4 +54,7 @@ vim.wo.signcolumn = "yes"                       -- always show sign column
 vim.wo.cursorline = true                        -- highlight current line
 vim.opt.timeoutlen = 100                        -- time to wait for a mapped sequence to complete
 vim.opt.updatetime = 300                        -- time to wait before swapfile is saved or LSP update
-vim.opt.mouse = 'a'                            -- enable mouse support in all modes
+vim.opt.mouse = 'a'                             -- enable mouse support in all modes
+
+vim.opt.completeopt = "menuone,noinsert,noselect"   -- mostly just for cmp
+vim.opt.pumheight = 10                          -- pop up menu height

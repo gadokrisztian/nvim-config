@@ -178,3 +178,11 @@ require("lspconfig").rust_analyzer.setup {
 	capabilities = common_config.capabilities,
 	filetypes = { "rust" },
 }
+
+
+require("lspconfig").ocamllsp.setup {
+	single_file_support = true,
+	on_attach = common_config.common_on_attach,
+	capabilities = common_config.capabilities,
+	filetypes = { "ocaml" },
+}

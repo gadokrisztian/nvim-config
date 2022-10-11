@@ -9,9 +9,9 @@ require("nvim_comment").setup({
 	create_mappings = true,
 
 	-- Normal mode mapping left hand side
-	line_mapping = "<Leader>cc",
+	-- line_mapping = "<Leader>cc",
 
 	-- Visual/Operator mapping left hand side
-	operator_mapping = "<Leader>c"
+	-- operator_mapping = "<Leader>c"
     
 })
