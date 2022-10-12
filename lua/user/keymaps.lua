@@ -31,8 +31,10 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 
 -- Navigate buffers
-keymap("n", "<Tab>", ":bnext<CR>", opts)
-keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
+keymap("n", "<Tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>", opts)
+keymap("n", "<S-Tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>", opts)
+
+keymap("n", "<S-Space", "za", opts)
 
 keymap({'n', 'x'}, 'y', '"+y', {noremap=true, silent=true, desc='Copy to clipboard.'})
 keymap({'n', 'x'}, 'p', '"+p', {noremap=true, silent=true, desc='Paste from clipboard.'})
