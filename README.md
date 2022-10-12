@@ -36,3 +36,11 @@ git clone https://github.com/gadokrisztian/nvim-config.git %LOCALAPPDATA%/nvim
 ```
 
 
+## Credits
+
+I took a lot if inspiration from these awesome projects:
+
+    - <https://github.com/LunarVim/Neovim-from-scratch>
+    - <https://github.com/LunarVim/LunarVim>
+    - <https://github.com/nvim-lua/kickstart.nvim>
+    - <https://github.com/SmiteshP/Dotfiles/tree/master/.config/nvim>
