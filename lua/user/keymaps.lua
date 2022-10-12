@@ -34,6 +34,9 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<Tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>", opts)
 keymap("n", "<S-Tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>", opts)
 
+-- Close everything except current buffer
+keymap("n", "<C-A>", ":w <bar> %bd <bar> e# <bar> bd# <CR><CR>", opts)
+
 keymap("n", "<S-Space", "za", opts)
 
 keymap({'n', 'x'}, 'y', '"+y', {noremap=true, silent=true, desc='Copy to clipboard.'})
