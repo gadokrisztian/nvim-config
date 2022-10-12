@@ -1,5 +1,5 @@
 require("user.preferences")
-
+require("user.keymaps")
 
 
 -- Disable some built-in plugins
