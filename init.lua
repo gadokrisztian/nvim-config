@@ -1,5 +1,6 @@
 require("user.preferences")
 require("user.keymaps")
+require("user.plugins")
 
 
 -- Disable some built-in plugins
@@ -9,9 +10,9 @@ local disabled_built_ins = {
 	"man",
 	"tarPlugin",
 	"zipPlugin",
-	"gzip"
+	"gzip" 
 }
 
-for i = 1, table.maxn(disabled_built_ins) do
-	vim.g["loaded_" .. disabled_built_ins[i]] = 1
+for _, k in ipairs(disabled_built_ins) do
+	vim.g["loaded_" .. k] = 1
 end
