@@ -54,5 +54,7 @@ vim.opt.timeoutlen = 100                        -- time to wait for a mapped seq
 vim.opt.updatetime = 300                        -- time to wait before swapfile is saved or LSP update
 vim.opt.mouse = 'a'                             -- enable mouse support in all modes
 
-vim.opt.completeopt = "menuone,noinsert,noselect"   -- mostly just for cmp
+--vim.opt.completeopt = "menuone"            -- mostly just for cmp
 vim.opt.pumheight = 10                          -- pop up menu height
+
+vim.g.python3_host_prog = "/usr/bin/python3"
