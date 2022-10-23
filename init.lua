@@ -6,6 +6,7 @@ require("user.cmp")
 require("user.lsp")
 require("user.telescope")
 require("user.treesitter")
+require("user.autopairs")
 
 -- Disable some built-in plugins
 local disabled_built_ins = {

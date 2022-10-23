@@ -36,6 +36,7 @@ vim.opt.report = 0                              -- always report changed lines
 vim.opt.backup = false                          -- don't create backup files
 vim.opt.writebackup = false                     -- don't make backup file before writing
 vim.opt.swapfile = false                        -- don't create swap files
+vim.opt.number = true                           -- show line numbers
 vim.opt.relativenumber = true                   -- show relative line numbers
 vim.opt.formatoptions='tcq'                     -- don't auto-wrap comments
 vim.opt.ruler = true                            -- show cursor position
