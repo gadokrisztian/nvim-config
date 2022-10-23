@@ -38,6 +38,6 @@ vim.diagnostic.config({
 -- Setup Servers
 require("user.lsp.python")
 require("user.lsp.c")
-require("user.lsp.java")
-require("user.lsp.rust")
+-- require("user.lsp.java")
+-- require("user.lsp.rust")
 require("user.lsp.ocaml")

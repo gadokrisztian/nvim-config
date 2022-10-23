@@ -66,6 +66,29 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
 
+  -- Telescope
+	use {
+		"nvim-telescope/telescope.nvim",
+		cmd = "Telescope",
+		module = "telescope",
+
+		requires = {
+			{ "nvim-lua/popup.nvim", opt = true },
+			{ "nvim-lua/plenary.nvim", opt = false },
+			{
+				"nvim-telescope/telescope-fzf-native.nvim",
+        -- make sure you have cmake and a C compiler installed
+				run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
+				opt = false
+			}
+		},
+		wants = {
+			"popup.nvim",
+			"plenary.nvim",
+			"telescope-fzf-native.nvim"
+		}
+	}
+
   -- Which key
   use "folke/which-key.nvim"
 
