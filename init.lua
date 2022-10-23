@@ -5,7 +5,7 @@ require("user.colorscheme")
 require("user.cmp")
 require("user.lsp")
 require("user.telescope")
-
+require("user.treesitter")
 
 -- Disable some built-in plugins
 local disabled_built_ins = {
