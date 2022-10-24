@@ -7,6 +7,14 @@ end
 npairs.setup {
   disable_in_macro = true,
   enable_moveright = true,
+  enable_check_bracket_line = true,
+  enable_afterquote = true,
+  enable_bracket_in_quote = true,
+  enable_abbr = true,
+  map_cr=false,
+  map_bs=true,
+  map_c_h=true,
+  map_c_w=true,
   
   check_ts = true,
   ts_config = {

@@ -10,7 +10,7 @@ vim.opt.wrap = true                             -- lines longer than the width o
 vim.opt.breakindent = true                      -- every wrapped line will continue visually indented
 vim.opt.wrapscan = true                         -- searches wrap around end-of-file
 vim.o.foldmethod="expr"                         -- folding method is expression based
-vim.o.foldexpr="nvim_treesitter#foldexpr()"     -- folding is based on treesitter
+--vim.o.foldexpr="nvim_treesitter#foldexpr()"     -- folding is based on treesitter
 vim.o.foldnestmax=3                             -- maximum number of nested folds
 vim.o.autoindent=true                           -- indent according to previous line
 vim.o.tabstop=4                                 -- number of spaces a tab counts for
@@ -51,11 +51,10 @@ vim.opt.cmdheight = 2                         -- show command line only when nee
 vim.opt.scrolloff = 8                           -- number of screen lines to keep above and below the cursor
 vim.wo.signcolumn = "yes"                       -- always show sign column
 vim.wo.cursorline = true                        -- highlight current line
-vim.opt.timeoutlen = 100                        -- time to wait for a mapped sequence to complete
-vim.opt.updatetime = 300                        -- time to wait before swapfile is saved or LSP update
+vim.opt.timeoutlen = 500                        -- time to wait for a mapped sequence to complete
+vim.opt.updatetime = 500                        -- time to wait before swapfile is saved or LSP update
 vim.opt.mouse = 'a'                             -- enable mouse support in all modes
-
---vim.opt.completeopt = "menuone"            -- mostly just for cmp
 vim.opt.pumheight = 10                          -- pop up menu height
-
 vim.g.python3_host_prog = "/usr/bin/python3"
+vim.o.filetype = "plugin"                      -- set filetype to plugin
+
