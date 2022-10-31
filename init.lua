@@ -8,6 +8,7 @@ require("user.telescope")
 require("user.treesitter")
 require("user.autopairs")
 require("user.comment")
+require("user.gitsigns")
 
 -- Disable some built-in plugins
 local disabled_built_ins = {

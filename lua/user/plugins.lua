@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"                  -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs"                  -- close brackets, parens, quotes in pair
   use "numToStr/Comment.nvim"                  -- Easily comment stuff
+  use "lewis6991/gitsigns.nvim"               -- Git 
   
 
   -- Theme inspired by Atom
