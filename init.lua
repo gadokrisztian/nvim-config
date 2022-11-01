@@ -9,6 +9,7 @@ require("user.treesitter")
 require("user.autopairs")
 require("user.comment")
 require("user.gitsigns")
+require("user.nvim-tree")
 
 -- Disable some built-in plugins
 local disabled_built_ins = {

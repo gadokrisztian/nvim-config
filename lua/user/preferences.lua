@@ -57,4 +57,6 @@ vim.opt.mouse = 'a'                             -- enable mouse support in all m
 vim.opt.pumheight = 10                          -- pop up menu height
 vim.g.python3_host_prog = "/usr/bin/python3"
 vim.o.filetype = "plugin"                      -- set filetype to plugin
+vim.g.loaded = 1                               -- disable some built-in plugins
+vim.g.loaded_netrwPlugin = 1                  -- disable netrw plugin
 

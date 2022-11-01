@@ -52,10 +52,7 @@ gitsigns.setup {
   diff_opts = {
     internal = true
   },
-}
-
---[[
-on_attach = function(bufnr)
+  on_attach = function(bufnr)
     local opts = { buffer=bufnr, noremap=true, silent=true }
     local maps = {
         ["<leader>g"] = {
@@ -78,5 +75,5 @@ on_attach = function(bufnr)
         ["<c-p>"] = { "<cmd>Telescope git_files<CR>", "Git Files" }
     }
     require("which-key").register(maps, opts)
-end,
-]]
+end
+}
