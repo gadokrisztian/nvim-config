@@ -10,6 +10,7 @@ require("user.autopairs")
 require("user.comment")
 require("user.gitsigns")
 require("user.nvim-tree")
+require("user.lualine")
 
 -- Disable some built-in plugins
 local disabled_built_ins = {
