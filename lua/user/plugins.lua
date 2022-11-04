@@ -70,6 +70,9 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
 
+  -- DAP client for debugging
+  use 'mfussenegger/nvim-dap'
+
   -- Telescope
 	use {
 		"nvim-telescope/telescope.nvim",
@@ -92,6 +95,7 @@ return packer.startup(function(use)
 			"telescope-fzf-native.nvim"
 		}
 	}
+
 
   -- Which key
   use "folke/which-key.nvim"
