@@ -1,5 +1,6 @@
 require("user.preferences")
 require("user.keymaps")
+require("user.which-key")
 require("user.plugins")
 require("user.colorscheme")
 require("user.cmp")
