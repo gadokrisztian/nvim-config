@@ -14,6 +14,7 @@ require("user.nvim-tree")
 require("user.lualine")
 require("user.toggleterm")
 require("user.dap")
+require("user.tmux")
 
 -- Disable some built-in plugins
 local disabled_built_ins = {
