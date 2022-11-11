@@ -13,8 +13,9 @@ require("user.gitsigns")
 require("user.nvim-tree")
 require("user.lualine")
 require("user.toggleterm")
-require("user.dap")
+--require("user.dap")
 require("user.tmux")
+require("user.copilot")
 
 -- Disable some built-in plugins
 local disabled_built_ins = {
