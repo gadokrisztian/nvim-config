@@ -51,6 +51,7 @@ return packer.startup(function(use)
 
   -- Theme inspired by Atom
   use "joshdick/onedark.vim"
+  use { "catppuccin/nvim", as = "catppuccin" }
 
 
   -- completions plugins
