@@ -44,7 +44,7 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim"                 -- Have packer manage itself
   use "nvim-lua/popup.nvim"                    -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim"                  -- Useful lua functions used ny lots of plugins
-  use "windwp/nvim-autopairs"                  -- close brackets, parens, quotes in pair
+  --use "windwp/nvim-autopairs"                  -- close brackets, parens, quotes in pair
   use "numToStr/Comment.nvim"                  -- Easily comment stuff
   use "lewis6991/gitsigns.nvim"                -- Git 
   
@@ -71,8 +71,6 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
 
-  -- DAP client for debugging
-  use 'mfussenegger/nvim-dap'
 
   -- Telescope
 	use {
@@ -117,6 +115,10 @@ return packer.startup(function(use)
   use "aserowy/tmux.nvim"
 
   use "github/copilot.vim"
+
+
+  use "jose-elias-alvarez/null-ls.nvim"
+  use "MunifTanjim/eslint.nvim"
 
 
   -- Automatically set up your configuration after cloning packer.nvim

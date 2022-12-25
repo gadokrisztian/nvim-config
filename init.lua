@@ -17,6 +17,8 @@ require("user.toggleterm")
 require("user.tmux")
 require("user.copilot")
 
+require("user.eslint")
+
 -- Disable some built-in plugins
 local disabled_built_ins = {
 	"netrwPlugin",
