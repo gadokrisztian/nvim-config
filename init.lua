@@ -1,23 +1,16 @@
-require("user.preferences")
-require("user.keymaps")
-require("user.which-key")
-require("user.plugins")
-require("user.colorscheme")
-require("user.cmp")
-require("user.lsp")
-require("user.telescope")
-require("user.treesitter")
-require("user.autopairs")
-require("user.comment")
-require("user.gitsigns")
-require("user.nvim-tree")
-require("user.lualine")
-require("user.toggleterm")
---require("user.dap")
-require("user.tmux")
-require("user.copilot")
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
 
-require("user.eslint")
+vim.opt.rtp:prepend(lazypath)
 
 -- Disable some built-in plugins
 local disabled_built_ins = {
@@ -26,10 +19,17 @@ local disabled_built_ins = {
 	"man",
 	"tarPlugin",
 	"zipPlugin",
-	"gzip" 
+	"gzip",
 }
 
 for _, k in ipairs(disabled_built_ins) do
 	vim.g["loaded_" .. k] = 1
 end
+
+require("user.preferences")
+require("user.keymaps")
+require("lazy").setup("user.plugins")
+
+
+
 
