@@ -29,6 +29,19 @@ vim.g.maplocalleader = " "
 -- keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 -- keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
+
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
+
+keymap("x", "<leader>p", "\"_dP", opts)
+
+keymap("n", "<C-k>", "<cmd>cnext<CR>zz", opts)
+keymap("n", "<C-j>", "<cmd>cnext<CR>zz", opts)
+keymap("n", "<leader>k", "<cmd>lnext<CR>zz", opts)
+keymap("n", "<leader>j", "<cmd>lprev<CR>zz", opts)
+
 
 -- Navigate buffers
 keymap("n", "<Tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>", opts)

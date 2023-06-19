@@ -28,7 +28,13 @@ end
 
 require("user.preferences")
 require("user.keymaps")
-require("lazy").setup("user.plugins")
+require("lazy").setup({
+  spec = {
+    { import = "user.plugins"},
+  }
+})
+
+require("user.configs.cmp")
 
 
 
