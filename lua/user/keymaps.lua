@@ -89,8 +89,8 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Telescope
 keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>', { desc = "Telescope Find Files" })
-keymap('n', '<leader>fg', '<cmd>telescope live_grep<cr>', { desc = "Telescope Grep" })
-keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { desc = "Telescope Buffers" })
+keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', { desc = "Telescope Grep" })
+-- keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>', { desc = "Telescope Buffers" })
 keymap('n', '<leader>fo', '<cmd>Telescope oldfiles<cr>', { desc = "Telescope MRU" })
 keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', { desc = "Telescope Help" })
 keymap('n', '<leader>fs', '<cmd>Telescope possession list<cr>', { desc = "Telescope Posession" })

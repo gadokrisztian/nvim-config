@@ -45,10 +45,10 @@ return {
                 interval = 1000,
                 follow_files = true,
             },
-            keymaps = {
-                noremap = true,
-                buffer = true,
-            },
+            -- keymaps = {
+            --     noremap = true,
+            --     buffer = true,
+            -- },
             current_line_blame_opts = {
                 virt_text = true,
                 virt_text_pos = "eol", -- 'eol' | 'overlay' | 'right_align'

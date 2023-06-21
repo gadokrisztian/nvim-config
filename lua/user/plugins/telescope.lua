@@ -9,6 +9,25 @@ return {
             "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
             opt = false
         },
+        {
+            "nvim-telescope/telescope-file-browser.nvim",
+            config = function ()
+                vim.api.nvim_set_keymap(
+                "n",
+                "<space>fb",
+                ":Telescope file_browser<CR>",
+                { noremap = true }
+                )
+
+                -- -- open file_browser with the path of the current buffer
+                -- vim.api.nvim_set_keymap(
+                -- "n",
+                -- "<space>fb",
+                -- ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
+                -- { noremap = true }
+                -- )
+            end
+        },
     },
     config = function()
         local actions = require("telescope.actions")
@@ -141,5 +160,6 @@ return {
         }
 
         require('telescope').load_extension('fzf')
+        require('telescope').load_extension('file_browser')
     end
 }
